@@ -24,8 +24,8 @@ function numbersClock() {
   for (let i = 1; i <= 12; i += 1) {   
     const divs = document.createElement('div')
     divs.className = 'number';
-    divs.classList.add([i])
-    divs.innerText = [i]       
+    divs.classList.add('n' + [i])
+    divs.innerText = [i];       
     divcapture.appendChild(divs)
   }
 }
