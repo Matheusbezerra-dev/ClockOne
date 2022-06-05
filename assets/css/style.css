@@ -5,7 +5,7 @@
 }
 
 body{
-  background: linear-gradient(to left, rgb(53, 39, 187),rgb(231, 6, 6));
+  background: linear-gradient(to left, rgb(11, 4, 75),rgb(255, 3, 3));
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -32,6 +32,59 @@ body{
   transform: rotate(var(--rotation));
 }
 
-.clock .1 {
-  --rotation: 30deg;
+#clock .n1 {--rotation: 30deg;}
+#clock .n2 {--rotation: 60deg;}
+#clock .n3 {--rotation: 90deg;}
+#clock .n4 {--rotation: 120deg;}
+#clock .n5 {--rotation: 150deg;}
+#clock .n6 {--rotation: 180deg;}
+#clock .n7 {--rotation: 210deg;}
+#clock .n8 {--rotation: 2400deg;}
+#clock .n9 {--rotation: 270deg;}
+#clock .n10 {--rotation: 300deg;}
+#clock .n11 {--rotation: 330deg;}
+#clock .n12 {--rotation: 360deg;}
+
+#clock .time{
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translatex(-59%) rotate(calc(var(--rotation) * 1deg));
+}
+
+#clock::after{
+  content: '';
+  position: absolute;
+  background-color: black;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+#seconds {
+  width: 3px;
+  height: 40%;
+  background-color: red;
+}
+
+#minutes{
+  width: 8px;
+  height: 41%;
+  background-color: black;
+}
+
+#hour{
+  width: 12px;
+  height: 35%;
+  background-color: black;
 }
