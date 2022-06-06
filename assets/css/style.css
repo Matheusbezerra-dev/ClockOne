@@ -20,7 +20,8 @@ body{
   border: 2px solid black;
   position: absolute;
   border-radius: 50%;
-}
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+  }
 
 #clock .number{
   --rotation: 0;

@@ -26,9 +26,11 @@ function numbersClock() {
   for (let i = 1; i <= 12; i += 1) {
     const divs = document.createElement('div')
     divs.className = 'number';
-    divs.classList.add('n' + [i])
-    divs.innerText = [i];
+    divs.classList.add('n' + [i])    
     divcapture.appendChild(divs)
+    const span = document.createElement('span')
+    span.innerText = [i]
+    divs.appendChild(span)
   }
   setDate()
 }
