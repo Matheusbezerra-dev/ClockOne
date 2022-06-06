@@ -33,6 +33,61 @@ body{
   transform: rotate(var(--rotation));
 }
 
+#clock .n1 span {
+  transform: rotate(-30deg);
+  display: inline-block;
+}
+
+#clock .n2 span {
+  transform: rotate(-60deg);
+  display: inline-block;
+}
+
+#clock .n3 span {
+  transform: rotate(-90deg);
+  display: inline-block;
+}
+
+#clock .n4 span{
+  transform: rotate(-120deg);
+  display: inline-block;
+}
+
+#clock .n5 span{
+  transform: rotate(-150deg);
+  display: inline-block;
+}
+
+#clock .n6 span{
+  transform: rotate(-180deg);
+  display: inline-block;
+}
+
+#clock .n7 span{
+  transform: rotate(-210deg);
+  display: inline-block;
+}
+
+#clock .n8 span{
+  transform: rotate(-240deg);
+  display: inline-block;
+}
+
+#clock .n9 span{
+  transform: rotate(-270deg);
+  display: inline-block;
+}
+
+#clock .n10 span{
+  transform: rotate(-300deg);
+  display: inline-block;
+}
+
+#clock .n11 span{
+  transform: rotate(-330deg);
+  display: inline-block;
+}
+
 #clock .n1 {--rotation: 30deg;}
 #clock .n2 {--rotation: 60deg;}
 #clock .n3 {--rotation: 90deg;}
